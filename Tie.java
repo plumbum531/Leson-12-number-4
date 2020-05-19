@@ -5,17 +5,6 @@ public class Tie extends Dress implements ClothForMen {
 
     }
 
-    public int getSize(){
-        return (size);
-    }
-
-    public int getCoast(){
-        return (coast);
-    }
-
-    public String getColour(){
-        return(colour);
-    }
 
     @Override
     public void DressMan() {

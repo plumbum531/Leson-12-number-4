@@ -6,17 +6,6 @@ public class T_Shirts extends Dress implements ClothForMen, ClothForWomen {
 
     }
 
-    public int getSize(){
-        return (size);
-    }
-
-    public int getCoast(){
-        return (coast);
-    }
-
-    public String getColour(){
-        return(colour);
-    }
 
     @Override
     public void DressMan() {
@@ -25,6 +14,7 @@ public class T_Shirts extends Dress implements ClothForMen, ClothForWomen {
         colour="white";
     }
 
+    @Override
     public void DressWomen(){
         size=Size.XS.euroSize;
         coast=96;

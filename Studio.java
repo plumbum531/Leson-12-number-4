@@ -9,10 +9,13 @@ package Hello.Lesson12number4;
         выводит на консоль всю информацию о женской одежде. То же самое для метода одетьМужчину.*/
 
 public class Studio {
+
     void DressMan ( Dress[] typedress){
         for (Dress d: typedress){
             if(d instanceof ClothForMen){
-                System.out.println("Men: "+"Coast: " + d.getCoast() +" Colour: " +  d.getColour() + " Size: " + d.getSize());
+                ((ClothForMen) d).DressMan();
+                System.out.println("Men: "+"Coast: " + d.getCoast() +" Colour: " +  d.getColour() +
+                        " Size: " + d.getSize());
             }
         }
     }
@@ -20,7 +23,9 @@ public class Studio {
     void DressWoman (Dress[] typedress) {
         for (Dress d : typedress) {
             if (d instanceof ClothForWomen) {
-                System.out.println("Women: "+"Coast: " + d.getCoast() +" Colour: " +  d.getColour() + " Size: " + d.getSize());
+                ((ClothForWomen) d).DressWomen();
+                System.out.println("Women: "+"Coast: " + d.getCoast() +" Colour: " +  d.getColour() +
+                        " Size: " + d.getSize());
             }
         }
     }

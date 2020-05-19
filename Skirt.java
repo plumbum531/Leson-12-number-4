@@ -6,18 +6,8 @@ public class Skirt extends Dress implements ClothForWomen {
 
     }
 
-    public int getSize(){
-        return (size);
-    }
 
-    public int getCoast(){
-        return (coast);
-    }
-
-    public String getColour(){
-        return(colour);
-    }
-
+    @Override
     public void DressWomen(){
         size=Size.S.euroSize;
         coast=48;

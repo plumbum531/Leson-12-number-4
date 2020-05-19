@@ -4,30 +4,19 @@ import static Hello.Lesson12number4.Size.*;
 
 public class Pants extends Dress implements ClothForMen, ClothForWomen  {
 
-    Pants(){}
-
-    public int getSize(){
-        return (size);
+    Pants(){
     }
 
-    public int getCoast(){
-        return (coast);
-    }
-
-    public String getColour(){
-        return(colour);
-    }
-
-        @Override
+    @Override
     public void DressMan() {
-        size = Size.L.euroSize;
-        coast = 499;
-        colour = "red";
+        super.size = Size.L.euroSize;
+        super.coast = 499;
+        super.colour = "red";
     }
-
+    @Override
     public void DressWomen(){
-        size = Size.M.euroSize;
-        coast = 10;
-        colour = "green";
+        super.size = Size.M.euroSize;
+        super.coast = 10;
+        super.colour = "green";
     }
 }
