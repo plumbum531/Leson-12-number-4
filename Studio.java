@@ -13,7 +13,7 @@ public class Studio {
     void DressMan ( Dress[] typedress){
         for (Dress d: typedress){
             if(d instanceof ClothForMen){
-                ((ClothForMen) d).DressMan();
+                ((ClothForMen) d).DressMan();// без этой строчки не работает. Здесь вызываем DressMan(). не пойму что, но что то не так
                 System.out.println("Men: "+"Coast: " + d.getCoast() +" Colour: " +  d.getColour() +
                         " Size: " + d.getSize());
             }
