@@ -16,9 +16,14 @@ package com.pb.lesson12.number4;
 public class Runner {
     public static void main(String[] args) {
 
-        Dress[] dress = new Dress[] {new Pants(), new Skirt (), new TShirt(), new Tie()};
+        Dress[] dress = new Dress[] {
+                new Pants(Size.L.euroSize, 18, "RED"),
+                new Skirt (Size.XS.euroSize, 6, "BLUE"),
+                new TShirt(Size.M.euroSize, 34, "WHITE"),
+                new Tie(Size.S.euroSize, 120, "BLACK")
+        };
         Studio studio = new Studio();
-        studio.dressMan(dress);
-        studio.dressWoman(dress);
+        studio.dressManVersion2(dress);
+        studio.dressWomanVersion2(dress);
     }
 }

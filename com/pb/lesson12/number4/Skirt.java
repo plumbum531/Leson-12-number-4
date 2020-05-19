@@ -2,14 +2,16 @@ package com.pb.lesson12.number4;
 
 public class Skirt extends Dress implements ClothForWomen {
 
-    Skirt() {
+    public Skirt(int size, int cost, String color) {
+        super(size, cost, color);
     }
 
     @Override
     public void dressWomen() {
-        size = Size.S.euroSize;
-        cost = 48;
-        color = "yellow";
+    }
 
+    @Override
+    public String toString() {
+        return "Skirt " + super.toString();
     }
 }
