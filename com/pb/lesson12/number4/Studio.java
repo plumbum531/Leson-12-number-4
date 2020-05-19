@@ -1,4 +1,4 @@
-package Hello.Lesson12number4;
+package com.pb.lesson12.number4;
 /*    б) Создать интерфейсы "Мужская Одежда" с методом "одетьМужчину" и "Женская Одежда" с методом "одетьЖенщину".
         в) Создать абстрактный класс Одежда, содержащий переменные - размер одежды, стоимость, цвет.
         г) Создать классы наследники Одежды - Футболка (реализует интерфейсы "Мужская Одежда" и "Женская Одежда"),
@@ -10,22 +10,20 @@ package Hello.Lesson12number4;
 
 public class Studio {
 
-    void DressMan ( Dress[] typedress){
-        for (Dress d: typedress){
+    void dressMan(Dress[] dress){
+        for (Dress d: dress){
             if(d instanceof ClothForMen){
-                ((ClothForMen) d).DressMan();// без этой строчки не работает. Здесь вызываем DressMan(). не пойму что, но что то не так
-                System.out.println("Men: "+"Coast: " + d.getCoast() +" Colour: " +  d.getColour() +
-                        " Size: " + d.getSize());
+                ((ClothForMen) d).dressMan();// без этой строчки не работает. Здесь вызываем DressMan(). не пойму что, но что то не так
+                System.out.println("Men " + d);
             }
         }
     }
 
-    void DressWoman (Dress[] typedress) {
-        for (Dress d : typedress) {
+    void dressWoman(Dress[] dress) {
+        for (Dress d : dress) {
             if (d instanceof ClothForWomen) {
-                ((ClothForWomen) d).DressWomen();
-                System.out.println("Women: "+"Coast: " + d.getCoast() +" Colour: " +  d.getColour() +
-                        " Size: " + d.getSize());
+                ((ClothForWomen) d).dressWomen();
+                System.out.println("Women " + d);
             }
         }
     }

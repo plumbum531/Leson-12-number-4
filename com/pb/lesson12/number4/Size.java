@@ -1,4 +1,4 @@
-package Hello.Lesson12number4;
+package com.pb.lesson12.number4;
 
 public enum Size {
     XXS(32){

@@ -1,15 +1,14 @@
-package Hello.Lesson12number4;
+package com.pb.lesson12.number4;
 
 public class Tie extends Dress implements ClothForMen {
     Tie() {
 
     }
 
-
     @Override
-    public void DressMan() {
+    public void dressMan() {
         size = Size.M.euroSize;
-        coast = 37;
-        colour = "black";
+        cost = 37;
+        color = "black";
     }
 }

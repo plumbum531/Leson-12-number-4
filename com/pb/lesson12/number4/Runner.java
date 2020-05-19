@@ -1,4 +1,4 @@
-package Hello.Lesson12number4;
+package com.pb.lesson12.number4;
 /*a) Создать перечисление, содержащее размеры одежды (XXS,XS,S,M,L). Перечисление содержит метод getDescription,
         возвращающий строку "Взрослый размер". Переопределить метод getDescription - для константы XXS метод
         должен возвращать строку “Детский размер”.  Также перечисление должно содержать числовое значение
@@ -16,14 +16,9 @@ package Hello.Lesson12number4;
 public class Runner {
     public static void main(String[] args) {
 
-        Dress[] typedress = new Dress[4];
-        typedress [0] = new Pants();
-        typedress [1] = new Skirt ();
-        typedress [2] = new T_Shirts();
-        typedress [3] = new Tie();
-
+        Dress[] dress = new Dress[] {new Pants(), new Skirt (), new TShirt(), new Tie()};
         Studio studio = new Studio();
-        studio.DressMan(typedress);
-        studio.DressWoman(typedress);
+        studio.dressMan(dress);
+        studio.dressWoman(dress);
     }
 }
